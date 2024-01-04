@@ -5,6 +5,13 @@ import styles from '@/styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
+var ghpages = require('gh-pages');
+
+ghpages.publish('.next', function(err:any) {
+  console.log('err',err);
+  
+});
+
 export default function Home() {
   return (
     <>
